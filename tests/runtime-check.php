@@ -204,7 +204,7 @@ if ( 'clean' === $phase ) {
  */
 if ( 'card' === $phase ) {
 	if ( empty( $_SERVER['SERVER_NAME'] ) ) {
-		$_SERVER['SERVER_NAME'] = 'hivepress-dev.local';
+		$_SERVER['SERVER_NAME'] = (string) wp_parse_url( home_url(), PHP_URL_HOST );
 	}
 
 	$f      = hpfv_fixture();
@@ -252,7 +252,7 @@ $listings  = $f['listings'];
 // Rendering a whole page from WP-CLI reads $_SERVER['SERVER_NAME'] in wp-includes/general-template.php,
 // which no CLI request has; a real request always does. Set so the log delta measures the plugin.
 if ( empty( $_SERVER['SERVER_NAME'] ) ) {
-	$_SERVER['SERVER_NAME'] = 'hivepress-dev.local';
+	$_SERVER['SERVER_NAME'] = (string) wp_parse_url( home_url(), PHP_URL_HOST );
 }
 
 echo "=== The harness can fail ===\n";
@@ -260,7 +260,7 @@ hpfv_check( 'deliberately false assertion (expected FAIL, subtracted below)', fa
 
 echo "=== Registration ===\n";
 hpfv_check( 'comment type resolves to the model', 'hpfv_follow' === hivepress()->model->get_model_name( 'comment', 'hp_hpfv_follow' ) );
-hpfv_check( 'follow route URL shape', 'https://hivepress-dev.local/wp-json/hivepress/v1/vendors/' . $vendor_id . '/follow/' === hivepress()->router->get_url( 'hpfv_vendor_follow_action', [ 'vendor_id' => $vendor_id ] ) );
+hpfv_check( 'follow route URL shape', home_url( '/wp-json/hivepress/v1/vendors/' . $vendor_id . '/follow/' ) === hivepress()->router->get_url( 'hpfv_vendor_follow_action', [ 'vendor_id' => $vendor_id ] ) );
 // get_classes() hands back the names it derived from the file names, lower-cased.
 hpfv_check( 'email class is listed with a label', in_array( 'hpfv_listing_follow', array_map( 'HivePress\Helpers\get_class_name', hivepress()->get_classes( 'emails' ) ), true ) && \HivePress\Emails\Hpfv_Listing_Follow::get_meta( 'label' ) );
 hpfv_check( 'Vendor fixture is published and owned by the owner', $vendor && 'publish' === $vendor->get_status() && (int) $vendor->get_user__id() === (int) $owner );
