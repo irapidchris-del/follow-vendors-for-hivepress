@@ -1,0 +1,312 @@
+# Copyright (C) 2026 ChrisB @ HivePress Community
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Follow Vendors for HivePress 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/irapidchris-del/follow-vendors-for-hivepress/issues\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-07T14:33:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: follow-vendors-for-hivepress\n"
+
+#. Description of the plugin
+#: follow-vendors-for-hivepress.php
+msgid "Lets users follow Vendors, lists them in the account menu, emails followers about new Listings, and adds a Follow item to Action Bar."
+msgstr ""
+
+#: follow-vendors-for-hivepress.php:125
+msgid "Settings"
+msgstr ""
+
+#: follow-vendors-for-hivepress.php:141
+msgid "Follow Vendors for HivePress requires the HivePress plugin to be installed and activated."
+msgstr ""
+
+#: follow-vendors-for-hivepress.php:177
+msgid "Donate"
+msgstr ""
+
+#. translators: %s: number of followers.
+#: includes/blocks/class-hpfv-follower-count.php:47
+#, php-format
+msgid "%s follower"
+msgid_plural "%s followers"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: the HivePress product name.
+#: includes/components/class-hpfv-follow-admin.php:64
+#, php-format
+msgid "Vendor pages are switched off under %s, Settings, Vendors on this site, so nothing from this plugin is shown until they are switched on."
+msgstr ""
+
+#. translators: %s: a comma-separated list of plugin and extension names.
+#: includes/components/class-hpfv-follow-admin.php:81
+#, php-format
+msgid "Not detected on this site: %s."
+msgstr ""
+
+#: includes/components/class-hpfv-follow-admin.php:170
+msgid "Jump to a section:"
+msgstr ""
+
+#: includes/components/class-hpfv-follow-admin.php:171
+msgid "Save Changes"
+msgstr ""
+
+#: includes/components/class-hpfv-follow-admin.php:172
+msgid "Back to top"
+msgstr ""
+
+#: includes/components/class-hpfv-follow.php:108
+#: includes/configs/settings.php:57
+msgid "Follow"
+msgstr ""
+
+#: includes/components/class-hpfv-follow.php:119
+#: includes/configs/settings.php:66
+msgid "Following"
+msgstr ""
+
+#: includes/components/class-hpfv-follow.php:130
+#: includes/configs/settings.php:75
+#: includes/controllers/class-hpfv-follow.php:89
+msgid "Followed Vendors"
+msgstr ""
+
+#: includes/configs/settings.php:31
+msgid "Follow Vendors"
+msgstr ""
+
+#: includes/configs/settings.php:47
+msgid "Labels"
+msgstr ""
+
+#: includes/configs/settings.php:48
+msgid "The words shown on the follow button and on the account page. These are content settings for this site; leave a box empty to keep the default wording, which, like every other piece of wording in the plugin, can be reworded with a translation plugin such as Loco Translate."
+msgstr ""
+
+#: includes/configs/settings.php:53
+msgid "Follow Label"
+msgstr ""
+
+#: includes/configs/settings.php:54
+msgid "Shown on the button while the visitor is not yet following the Vendor."
+msgstr ""
+
+#: includes/configs/settings.php:62
+msgid "Following Label"
+msgstr ""
+
+#: includes/configs/settings.php:63
+msgid "Shown on the button once the visitor follows the Vendor. Clicking it again unfollows."
+msgstr ""
+
+#: includes/configs/settings.php:71
+msgid "Account Page Title"
+msgstr ""
+
+#: includes/configs/settings.php:72
+msgid "The name of the account menu item and the heading of the page that lists the Vendors a user follows."
+msgstr ""
+
+#: includes/configs/settings.php:82
+msgid "Where the Follow Button Shows"
+msgstr ""
+
+#. translators: 1: the HivePress product name, 2: the label of the core "Enable vendor pages" setting.
+#: includes/configs/settings.php:85
+#, php-format
+msgid "The button sits beside the Send Message control on Vendor cards and in the actions box on Vendor pages. Vendor cards and pages only exist while \"%2$s\" is ticked under %1$s, Settings, Vendors; with it off nothing from this plugin is shown. If you have customised the Vendor page in the template editor and removed the actions box, the button has nowhere to go and is not shown there either."
+msgstr ""
+
+#: includes/configs/settings.php:87
+msgid "Enable vendor pages"
+msgstr ""
+
+#: includes/configs/settings.php:93
+msgid "Show the Button On"
+msgstr ""
+
+#: includes/configs/settings.php:94
+msgid "Vendor cards are the small boxes in Vendor lists and search results; the Vendor page is the Vendor's own profile page."
+msgstr ""
+
+#: includes/configs/settings.php:100
+msgid "Vendor cards and Vendor pages"
+msgstr ""
+
+#: includes/configs/settings.php:101
+msgid "Vendor cards only"
+msgstr ""
+
+#: includes/configs/settings.php:102
+msgid "Vendor pages only"
+msgstr ""
+
+#: includes/configs/settings.php:107
+msgid "Follower Count"
+msgstr ""
+
+#: includes/configs/settings.php:108
+msgid "Show how many people follow a Vendor, under the Vendor's name"
+msgstr ""
+
+#: includes/configs/settings.php:109
+msgid "Appears on Vendor cards and pages once at least one person follows the Vendor. Nothing is shown for a Vendor with no followers."
+msgstr ""
+
+#: includes/configs/settings.php:117
+msgid "Emails to Followers"
+msgstr ""
+
+#. translators: 1: the HivePress product name, 2: the name of the email under HivePress > Emails.
+#: includes/configs/settings.php:120
+#, php-format
+msgid "When a followed Vendor publishes new Listings, each follower is emailed a list of them. Listings published inside the quiet period are gathered into one email, so a Vendor adding five Listings in a row sends one message, not five. The wording can be changed under %1$s, Emails, \"%2$s\". Renewing, hiding or unhiding a Listing never sends another email."
+msgstr ""
+
+#: includes/configs/settings.php:122
+#: includes/emails/class-hpfv-listing-follow.php:44
+msgid "New Listings from a Followed Vendor"
+msgstr ""
+
+#: includes/configs/settings.php:128
+msgid "New Listing Emails"
+msgstr ""
+
+#: includes/configs/settings.php:129
+msgid "Email followers when a Vendor they follow publishes new Listings"
+msgstr ""
+
+#: includes/configs/settings.php:130
+msgid "Untick to stop these emails altogether. Following still works; followers simply are not told."
+msgstr ""
+
+#: includes/configs/settings.php:137
+msgid "Quiet Period (minutes)"
+msgstr ""
+
+#: includes/configs/settings.php:138
+msgid "Listings published inside this window go out as one email. 10 minutes suits most sites; raise it if your Vendors tend to publish in batches over a longer stretch. Between 1 and 1440 (one day)."
+msgstr ""
+
+#: includes/configs/settings.php:149
+msgid "Action Bar Items"
+msgstr ""
+
+#. translators: %s: the Action Bar for HivePress plugin name.
+#: includes/configs/settings.php:152
+#, php-format
+msgid "With %s active, a Follow item is added after the items you have set up on that plugin's tab, on Vendor pages and on Listing pages for the Listing's Vendor. It is added to whichever bar shows on that page, so a bar that already has five items becomes six there; the Listing page and Vendor page bars in that plugin are the tidy way to make room. The Save and Alert buttons that used to be set up here now live on that plugin's own tab, under Quick Actions, so they work whether or not this plugin is installed."
+msgstr ""
+
+#: includes/configs/settings.php:159
+msgid "Follow Item"
+msgstr ""
+
+#: includes/configs/settings.php:160
+msgid "Add a Follow item on Vendor pages, and on Listing pages for the Listing's Vendor"
+msgstr ""
+
+#: includes/configs/settings.php:161
+msgid "The item reads Follow or Following to match the visitor's current state, and switches without reloading the page."
+msgstr ""
+
+#: includes/configs/settings.php:171
+msgid "Removing the Plugin"
+msgstr ""
+
+#: includes/configs/settings.php:172
+msgid "Your settings and everyone's follows are kept if you delete this plugin, whatever the delete screen's generic warning says, unless you tick the box below. Deactivating the plugin never removes anything either; while it is deactivated the follow records simply sit unused (they appear on the Comments screen as \"hp_hpfv_follow\" entries until the plugin is active again)."
+msgstr ""
+
+#: includes/configs/settings.php:177
+msgid "Delete All Data"
+msgstr ""
+
+#: includes/configs/settings.php:178
+msgid "Delete this plugin's settings and every follow when the plugin is deleted"
+msgstr ""
+
+#. translators: %s: the HivePress product name.
+#: includes/configs/settings.php:181
+#, php-format
+msgid "Removes every follow, the settings on this tab, the plugin's own record of which Listings have been announced, and any reworded copy of its email under %s, Emails. This cannot be undone."
+msgstr ""
+
+#: includes/emails/class-hpfv-listing-follow.php:45
+msgid "This email is sent to users who follow a Vendor when that Vendor publishes new Listings. One email covers every Listing published within the quiet period set under Settings, Follow Vendors."
+msgstr ""
+
+#. translators: %s: the Vendor's name. Filled in automatically.
+#: includes/emails/class-hpfv-listing-follow.php:71
+#, php-format
+msgid "New Listings from %s"
+msgstr ""
+
+#. translators: 1: the follower's name, 2: the Vendor's name, 3: the list of new Listings, 4: the link to the follower's Followed Vendors page. All four are filled in automatically.
+#: includes/emails/class-hpfv-listing-follow.php:78
+#, php-format
+msgid "Hi, %1$s! %2$s, a Vendor you follow, has published new Listings: %3$s You can stop these emails by unfollowing the Vendor on the site or from your Followed Vendors page: %4$s"
+msgstr ""
+
+#: includes/updater.php:685
+msgid "See the GitHub releases page for the changelog."
+msgstr ""
+
+#: includes/updater.php:698
+#: includes/updater.php:901
+msgid "Check for updates"
+msgstr ""
+
+#. translators: %s: version number of the new release.
+#: includes/updater.php:768
+#, php-format
+msgid "A new version of Follow Vendors for HivePress (%s) is available."
+msgstr ""
+
+#: includes/updater.php:771
+msgid "Follow Vendors for HivePress is up to date."
+msgstr ""
+
+#: includes/updater.php:774
+msgid "Follow Vendors for HivePress has no releases published yet, so there is nothing to update to. This is normal for a new install and nothing is wrong."
+msgstr ""
+
+#: includes/updater.php:777
+msgid "No releases have been published for Follow Vendors for HivePress yet, so there is nothing to update to. This is normal for a brand new copy and does not mean anything is wrong."
+msgstr ""
+
+#: includes/updater.php:780
+msgid "GitHub limits how many update checks one server may make each hour, and this server has reached that limit. Nothing is wrong with the plugin or your site, and checking will work again within the hour."
+msgstr ""
+
+#: includes/updater.php:783
+msgid "Could not reach GitHub to check for updates. Please try again later."
+msgstr ""
+
+#: includes/updater.php:825
+msgid "Could not rename the update directory."
+msgstr ""
+
+#. translators: 1: number of plugins checked, 2: number with an update available.
+#: includes/updater.php:978
+#, php-format
+msgid "Checked %1$s plugin for updates: %2$s can be updated."
+msgid_plural "Checked %1$s plugins for updates: %2$s can be updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: number of plugins checked.
+#: includes/updater.php:981
+#, php-format
+msgid "Checked %s plugin for updates: it is up to date."
+msgid_plural "Checked %s plugins for updates: all are up to date."
+msgstr[0] ""
+msgstr[1] ""
